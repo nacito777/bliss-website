@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Bliss Catering</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <i class="fas fa-utensils"></i>
+                    Bliss Catering
+                </a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="menu.html" class="nav-link active">Menu</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="login.html" class="nav-link">Login</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Menu Header -->
+    <section class="menu-header">
+        <div class="container">
+            <h1>Our Delicious Menu</h1>
+            <p>Discover our carefully crafted dishes made with the finest ingredients</p>
+        </div>
+    </section>
+
+    <!-- Menu Controls -->
+    <section class="menu-controls">
+        <div class="container">
+            <div class="menu-search">
+                <div class="search-wrapper">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="menu-search" placeholder="Search for dishes...">
+                </div>
+            </div>
+            
+           <div class="menu-filters">
+                <button class="filter-btn active" data-category="all">All Items</button>
+                <button class="filter-btn" data-category="appetizers">Appetizers</button>
+                <button class="filter-btn" data-category="mains">Main Courses</button>
+                <button class="filter-btn" data-category="desserts">Desserts</button>
+                <button class="filter-btn" data-category="beverages">Beverages</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Items -->
+    <section class="menu-section">
+        <div class="container">
+            <div class="menu-grid" id="menu-grid">
+                <!-- Appetizers -->
+                <div class="menu-item" data-category="appetizers">
+                    <div class="menu-item-image">
+                        <img src="images/Mushrooms.jpg" alt="Stuffed Mushrooms">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Stuffed Mushrooms</h3>
+                        <p>Fresh mushrooms stuffed with herbs, cheese, and breadcrumbs, baked to perfection.</p>
+                        <div class="menu-item-footer">
+                            <span class="price">$12.99</span>
+                            <button class="btn btn-small btn-primary">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="appetizers">
+                    <div class="menu-item-image">
+                        <img src="images/Cocktail.jpg" alt="Shrimp Cocktail">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Shrimp Cocktail</h3>
+                        <p>Fresh jumbo shrimp served with our signature cocktail sauce and lemon wedges.</p>
+                        <div class="menu-item-footer">
+                            <span class="price">$16.99</span>
+                            <button class="btn btn-small btn-primary">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Courses -->
+                <div class="menu-item" data-category="mains">
+                    <div class="menu-item-image">
+                        <img src="images/Salmon.jpg" alt="Grilled Salmon">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Grilled Salmon</h3>
+                        <p>Atlantic salmon grilled to perfection with herbs and served with seasonal vegetables.</p>
+                        <div class="menu-item-footer">
+                            <span class="price">$24.99</span>
+                            <button class="btn btn-small btn-primary">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="mains">
+                    <div class="menu-item-image">
+                        <img src="images/Beef.jpg" alt="Beef Tenderloin">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Beef Tenderloin</h3>
+                        <p>Prime beef tenderloin cooked to your preference with roasted potatoes and gravy.</p>
+                        <div class="menu-item-footer">
+                            <span class="price">$32.99</span>
+                            <button class="btn btn-small btn-primary">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="mains">
+                    <div class="menu-item-image">
+                        <img src="images/Chicken Parmesan.jpg" alt="Chicken Parmesan">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Chicken Parmesan</h3>
+                        <p>Breaded chicken breast topped with marinara sauce and melted mozzarella cheese.</p>
+                        <div class="menu-item-footer">
+                            <span class="price">$19.99</span>
+                            <button class="btn btn-small btn-primary">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Desserts -->
+                <div class="menu-item" data-category="desserts">
+                    <div class="menu-item-image">
+                        <img src="images/Chocolate Cake.jpg" alt="Chocolate Cake">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Chocolate Cake</h3>
+                        <p>Rich, moist chocolate cake layered with chocolate ganache and fresh berries.</p>
+                        <div class="menu-item-footer">
+                            <span class="price">$8.99</span>
+                            <button class="btn btn-small btn-primary">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="desserts">
+                    <div class="menu-item-image">
+                        <img src="images/Tiramisu.jpg" alt="Tiramisu">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Tiramisu</h3>
+                        <p>Classic Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cream.</p>
+                        <div class="menu-item-footer">
+                            <span class="price">$9.99</span>
+                            <button class="btn btn-small btn-primary">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Beverages -->
+                <div class="menu-item" data-category="beverages">
+                    <div class="menu-item-image">
+                        <img src="images/Fresh Lemonade.jpg" alt="Fresh Lemonade">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Fresh Lemonade</h3>
+                        <p>Freshly squeezed lemons with a hint of mint, served ice cold.</p>
+                        <div class="menu-item-footer">
+                            <span class="price">$3.99</span>
+                            <button class="btn btn-small btn-primary">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="beverages">
+                    <div class="menu-item-image">
+                        <img src="images/Signature Cocktails.jpg" alt="Craft Cocktails">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Signature Cocktails</h3>
+                        <p>Our mixologist's special creations using premium spirits and fresh ingredients.</p>
+                        <div class="menu-item-footer">
+                            <span class="price">$12.99</span>
+                            <button class="btn btn-small btn-primary">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-utensils"></i> Bliss Catering</h3>
+                    <p>Fresh taste delivered with love. Creating unforgettable culinary experiences for all occasions.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="contact.html">Wedding Catering</a></li>
+                        <li><a href="contact.html">Corporate Events</a></li>
+                        <li><a href="contact.html">Daily Lunch Service</a></li>
+                        <li><a href="contact.html">Custom Orders</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-envelope"></i> orders@blisscatering.com</p>
+                    <p><i class="fas fa-phone"></i> +233 592 794 939</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Accra, Ghana</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Bliss Catering. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
